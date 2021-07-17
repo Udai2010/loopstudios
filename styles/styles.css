@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+*{
+    outline: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+.landingpage{
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url("/images/desktop/image-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    height: 85vh;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+.brandtitle{
+   font-family: Alata;
+   color: hsl(0, 0%, 100%);
+   font-weight: 400;
+   font-size: 2.5rem;
+}
+
+.nav-icons{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    font-family: Alata;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 1rem;
+    transition: 1s ease;
+    animation : nav 5s;
+}
+
+.nav-icons > li:hover{
+    content: " ";
+    border-bottom: 3px solid hsl(0, 0%, 100%);
+    padding-top: 8px;
+    padding-bottom: 5px;
+    width: 50%;
+}
+
+
+.container{
+    flex-flow: column;
+    margin-left: 18%;
+    align-items: flex-end;
+    border: 2px solid hsl(0, 0%, 100%); 
+    width: 45%;
+    margin-top: 10%;
+    padding: 0.8% 0.8% 0.8% 0.8%;
+}
+
+.header-content{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    padding: 5% 5% 5% 5%;
+    color: hsl(0, 0%, 100%);
+    font-size: 3.7rem;
+    letter-spacing: 5px;
+    transition: all 1s ease;
+}
+
+.border2{
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+.interactive-vr{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 10% ;
+}
+
+.vr-content{
+    position: absolute;
+    box-sizing: border-box;
+    background: hsl(0, 0%, 100%);
+    margin-top: 13%;
+    width: 50%;
+    margin-left: 40%;
+    padding: 5% 5% 5% 5% ;
+    width: 45%;
+}
+
+.vr-title{
+    font-family: 'Josefin Sans', sans-serif ;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: hsl(0, 0%, 0%);
+    letter-spacing: 1px;
+}
+
+.vr-body{
+    font-family: 'Alata';
+    padding-top: 5%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 90%;
+    color:hsl(0, 0%, 55%);
+}
+
+.creations{
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10vh
+}
+
+.creations-title{
+    font-family: 'Josefin Sans', sans-serif ;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.creations-button{
+    font-family: 'Josefin Sans', sans-serif ;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background: hsl(0, 0%, 0%);
+    padding: 1rem 2.5rem 1rem 2.5rem ;
+}
+
+.creations-button a{
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.creations-cards{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cards img{
+    margin-bottom: 5vh;
+    transition: .5s ease;
+}
+
+.cards:hover img{
+    opacity: 0.5;
+}
+
+.cards:hover .cards-title{
+    color: hsl(0, 0%, 0%);
+}
+
+.cards > img{
+    filter: brightness(50%);
+}
+
+.cards-title{
+    position: absolute;
+    margin-top: -9%;
+    font-family: 'Josefin Sans', sans-serif ;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 2px;
+    margin-left: 3%;
+    width: 12%;
+}
+
+.footer{
+    margin-top: 10vh;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    height: 30vh;
+}
+
+.footer-upper-content{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+    align-items: center;
+}
+
+.footertitle{
+    font-family: Alata;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.footericons{
+    font-size: 2rem;
+}
+.social-media{
+    color: hsl(0, 0%, 100%);
+    margin-left: 5vh;
+    
+}
+
+.fa {
+    transition: 0.5s ease;
+}
+
+.fa-facebook-square:hover{
+    color: #4267B2;
+}
+
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+.fa-pinterest:hover{
+    color: #E60023;
+}
+
+.fa-instagram:hover{
+    color:  #d6249f;
+}
+
+.footer-below-content{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+
+.footer-nav-icons{
+    display: flex;
+    font-family: Alata;
+    font-size: 1rem;
+}
+
+.footer-nav-icons > li {
+    margin-right: 10%;
+}
+
+.footer-nav-icons >:hover{
+    border-bottom: 3px solid hsl(0, 0%, 100%);
+}
+
+.copyright{
+    font-family: Alata;
+    font-size: 1rem;
+    color: hsl(0, 0%, 41%);
+}
